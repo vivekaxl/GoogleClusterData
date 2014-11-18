@@ -6,7 +6,7 @@
 - Task Requests: Using the task resource requests and machine availability, we can check whether over provisioning is actually true.
 
 
-<img src="{{site.url}}/job_event.jpg">
+<img src="/job_event.jpg">
 
 ###Challenges
 - Data is 217GB. We have still not run into any problems but we would like to prepare ourselves.
