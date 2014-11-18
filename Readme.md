@@ -14,7 +14,7 @@
 ###TODO:
 - Two more tables to look at
 - Start looking at publications to see if they produce some result. This would help us validating our results. 
+<img align=right width=200
+src="https://github.com/WeiFoo/GoogleClusterData/blob/master/job_event.jpg">
 
-
-![alt text](/GoogleClusterData/job_event.jpg)
 
