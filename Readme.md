@@ -6,6 +6,8 @@
 - Task Requests: Using the task resource requests and machine availability, we can check whether over provisioning is actually true.
 
 
+<img src="{{site.url}}/job_event.jpg">
+
 ###Challenges
 - Data is 217GB. We have still not run into any problems but we would like to prepare ourselves.
 - Plan to tranfer the tables that we build into a DB so that join operations are easy
@@ -14,7 +16,6 @@
 ###TODO:
 - Two more tables to look at
 - Start looking at publications to see if they produce some result. This would help us validating our results. 
-<img 
-src="https://github.com/WeiFoo/GoogleClusterData/blob/master/job_event.jpg">
+
 
 
