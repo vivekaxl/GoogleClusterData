@@ -1,8 +1,9 @@
+##2014-11-18 Report
 ### Work Done
 - Runtime of Jobs/Tasks
 - Machine Avaiblility 
-+ Attributes are obfusicated: We might need to makes some educated guesses
-+ Failure rates: This can help us in failure prediction/modelling
+  - Attributes are obfusicated: We might need to makes some educated guesses
+  - Failure rates: This can help us in failure prediction/modelling
 - Task Requests: Using the task resource requests and machine availability, we can check whether over provisioning is actually true.
 
 
