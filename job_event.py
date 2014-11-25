@@ -42,7 +42,7 @@ def _check_dictionary(dictionary):
       if flag == True: 
         temp_time = int(item.timestamp) - int(dictionary[key][0].timestamp)
         with open("Results.txt", "a") as myfile: 
-          myfile.write("Job id: %s Time: %d\n"%(key,temp_time))
+          myfile.write("Job id: %s Start Time: %d Duration: %d\n"%(key,int(dictionary[key][0].timestamp),temp_time))
         delete_keys.append(key)
   for x in delete_keys: dictionary.pop(x,None)
   return dictionary

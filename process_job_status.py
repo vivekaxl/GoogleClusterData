@@ -1,0 +1,44 @@
+from __future__ import division
+import math,sys
+
+def say(x):
+  sys.stdout.write(str(x)); sys.stdout.flush()
+
+class pair_wise():
+  def __init__(self,start_time,duration):
+    self.start_time = start_time
+    self.duration = duration
+    self.end_time = start_time+duration
+
+def get_list(filename,start_time):
+  l = []
+  f = open(filename,"r")
+  count=0
+  for line in f:
+    count+=1
+    if(count%1000 == 0): say(".")
+    l.append(pair_wise(int(line.replace("\n","").split(" ")[5])-start_time,int(line.replace("\n","").split(" ")[7])))
+  return l
+
+def fill_time_list(listl,time_list):
+  for item in listl:
+    start_time = int(item.start_time/1e4)
+    end_time = int(item.end_time/1e4)
+    for i in xrange(start_time,end_time+1):
+      time_list[i]+=1
+
+  return time_list
+
+if __name__ == '__main__': 
+  start_time = 8095376
+  delta = 10000
+  end_time = 2505575234742
+  l = get_list("Results.txt",start_time) 
+  time_list = [0 for x in xrange(int((end_time-start_time)/1e4)+delta)]
+  time_list = fill_time_list(l,time_list)
+  f = open("runtime.txt","w")
+  for i,t in enumerate(time_list):
+    f.write("%d %d\n"%(i,t))
+  f.close()
+  
+

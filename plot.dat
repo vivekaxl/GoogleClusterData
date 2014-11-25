@@ -1,0 +1,6 @@
+set terminal png
+set output "plot1.png"
+set xlabel "time(10^4 ms)"
+set ylabel "# of jobs"
+set title "Running jobs/sec"
+plot "subsample1.txt" using 1:2 with lines
